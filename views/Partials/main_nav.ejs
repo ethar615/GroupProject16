@@ -1,0 +1,46 @@
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"><i class="fa-regular fa-address-card"></i> Tala</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <% if(title=="Home") { %>
+                    <a class="nav-link active" href="./home">
+                <% } else { %>
+                    <a class="nav-link" href="./home">
+                <% } %>
+                    <i class="fa-solid fa-house-chimney"></i> Home</a>
+              </li>
+              <li class="nav-item">
+                <% if(title=="About Me") { %>
+                    <a class="nav-link active" href="./aboutme">
+                <% } else { %>
+                    <a class="nav-link" href="./aboutme">
+                <% } %>
+                    <i class="fa-solid fa-info"></i> About Me</a>
+              </li>
+              <li class="nav-item">
+                <% if(title=="Projects") { %>
+                    <a class="nav-link active" href="./projects">
+                <% } else { %>
+                    <a class="nav-link" href="./projects">
+                <% } %>
+                    <i class="fa-brands fa-elementor"></i> Projects</a>
+              </li>
+              <li class="nav-item">
+                <% if(title=="Contact Me") { %>
+                    <a class="nav-link active" href="./contactme">
+                <% } else { %>
+                    <a class="nav-link" href="./contactme">
+                <% } %>
+                    <i class="fa-solid fa-phone"></i> Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>

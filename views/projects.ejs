@@ -1,0 +1,79 @@
+<%- include('Partials/header'); -%>
+<%- include('Partials/main_nav'); -%>
+
+<section id="projects" class="section-one">
+    <style>
+        /*adds space above the "CURRENT PROJECTS" title*/
+        .projects-title {
+            margin-top: 40px;
+            text-align: center;
+        }
+        /*styles for bold project titles*/
+        .project-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            display: block;
+            margin-top: 20px;
+        }
+        /*centers and resizes the project images*/
+        .project-image {
+            display: block;
+            margin: 15px auto;
+            width: 60%; 
+            max-width: 300px;
+        }
+    </style>
+
+    <div class="display-4 font-weight-bold projects-title">CURRENT <span class="text-primary">PROJECTS</span></div>
+    <!-- Project 1 -->
+    <span class="project-title" style="padding: 0 30px;">1. Cipher Encryption Game Using Multiple Algorithms</span>
+    <p class="section-two-span" style="padding: 0 30px;">
+        This project is a cipher-based encryption game that allows users
+        to encrypt messages using a variety of encryption algorithms,
+        including Caesar, Substitution, Playfair, Transposition,
+        Product, and RSA ciphers. I developed a graphical user interface
+        (GUI) using Tkinter to enable users to interact with the game by
+        selecting ciphers from a dropdown menu and entering messages to
+        be encrypted. The program efficiently handles different
+        encryption methods and displays both the original and encrypted
+        messages in real-time, leveraging object-oriented programming
+        principles to ensure modularity and ease of extension.
+        <a class="custom-anchor"
+           href="https://github.com/talauiwdiqugdiq/WebandScriptingProgramming/blob/main/project1.py"
+           target="_blank">View Project 1 on GitHub</a>
+    </p>
+    <img src="/Assests/images/project-1-pic.png" alt="Project 1 Image" class="project-image"/>
+
+    <!-- Project 2 -->
+    <span class="project-title" style="padding: 0 30px;">2. Implementation of a Queue Class in Python</span>
+    <p class="section-two-span" style="padding: 0 30px;">
+        In this project, I created a Queue class that implements
+        fundamental queue operations such as enqueue, dequeue, and
+        checking if the queue is empty. I used a list to manage the
+        data, enabling elements to be added to the back and removed from
+        the front, following the First-In-First-Out (FIFO) principle. My
+        implementation includes methods for retrieving the front
+        element, checking if the queue is empty, and providing a string
+        representation of the queue's current state. I also included
+        test cases that demonstrate the functionality of the queue by
+        enqueuing and dequeuing various integers while displaying the
+        queue's state at each step.
+    </p>
+    <img src="/Assests/images/project-2-pic.png" alt="Project 2 Image" class="project-image"/>
+
+    <!-- Project 3 -->
+    <span class="project-title" style="padding: 0 30px;">3. Calculation of Total Costs in a Purchase Program</span>
+    <p class="section-two-span" style="padding: 0 30px;">
+        In this project, I developed a simple program that calculates
+        the total costs of items purchased. I defined the cost per item
+        and the quantity, and then calculated the subtotal, tax, and
+        total cost. The tax rate is set at 13%, and the program computes
+        these values step by step. I also included formatted print
+        statements to display the cost per item, quantity, subtotal,
+        tax, and total cost with two decimal places for better
+        readability. This program effectively demonstrates basic
+        arithmetic operations and formatting in Python.
+    </p>
+    <img src="/Assests/images/project-3-pic.png" alt="Project 3 Image" class="project-image"/>
+</section>
+<%- include('Partials/footer'); -%>
